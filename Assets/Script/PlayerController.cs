@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
         ferryScale += value / 20f;
         transform.localScale = Vector3.one * ferryScale;
 
+        FindObjectOfType<GameManager>().GainScore((int)(value * 100));
         // Gain Score
     }
 
@@ -68,6 +69,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Die");
 
         //GameOver
+        FindObjectOfType<GameManager>().GameOver();
 
     }
 }

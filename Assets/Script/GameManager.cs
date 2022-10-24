@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,12 +10,21 @@ public class GameManager : MonoBehaviour
     public Vector2 spawnRateRange;
     float spawnTimer;
     
+    
+    public Text scoreText;
+    int score;
+
+    public GameObject gameOverPanel;
+    
+    
     void Start()
     {
         for(int i=0; i<8; i++)
         {
             SpawnNewFerry();
         }
+
+        gameOverPanel.SetActive(false);
     }
 
     
@@ -42,4 +53,22 @@ public class GameManager : MonoBehaviour
         if(dir == 1 )
         ferry.transform.Rotate(Vector3.up,180f);
     }
+
+    public void GainScore(int amount)
+    {
+        score += amount;
+        string zero = "000000";
+        scoreText.text = zero.Substring(0, zero.Length - score.ToString().Length) + score; 
+    }
+
+    public void GameOver()
+    {
+        gameOverPanel.SetActive(true);
+    }
+
+    public void ReloadScene()
+    {
+         SceneManager.LoadScene(0); 
+    }
+
 }
