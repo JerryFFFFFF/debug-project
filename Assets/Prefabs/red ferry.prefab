@@ -75,12 +75,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 7a7c8950c232ca041aa1777b4e763d95, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d98c71a7adfa48459a93ed4ba847599, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.4285715, y: 1.4285715}
+  m_Size: {x: 10, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -103,8 +103,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1111112, y: 1.1111112}
-    newSize: {x: 1.4285715, y: 1.4285715}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 10, y: 10}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -124,6 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19f3dae832114a545bff11e4595a37f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ferryScaleRange: {x: 0.4, y: 0.5}
+  ferryScaleRange: {x: 0.7, y: 0.9}
   moveSpeedRange: {x: 0.7, y: 1.2}
   ferryScale: 0

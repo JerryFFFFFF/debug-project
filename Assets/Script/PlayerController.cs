@@ -72,4 +72,5 @@ public class PlayerController : MonoBehaviour
         FindObjectOfType<GameManager>().GameOver();
 
     }
+    
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1223338483748788111}
   - component: {fileID: 7202876335848438857}
   - component: {fileID: -4900021732935169857}
+  - component: {fileID: -4743459541362597013}
   m_Layer: 0
   m_Name: orange ferry
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 29277d4c4901c2d479e112944b70b0fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b56c3152d56e68e4d91fa31315ad5c2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,6 +98,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19f3dae832114a545bff11e4595a37f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ferryScaleRange: {x: 1, y: 1.2}
-  moveSpeedRange: {x: 0.4, y: 0.6}
+  ferryScaleRange: {x: 1.2, y: 1.6}
+  moveSpeedRange: {x: 0.4, y: 1.1}
   ferryScale: 0
+--- !u!61 &-4743459541362597013
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2804283274512881698}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.017388433, y: -0.19383585}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 10}
+    newSize: {x: 10, y: 10}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.41869706, y: 0.32068276}
+  m_EdgeRadius: 0

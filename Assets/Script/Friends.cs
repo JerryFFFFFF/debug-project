@@ -23,6 +23,6 @@ public class Friends : MonoBehaviour
 
     void Update()
     {
-        transform.position+= transform.right * moveSpeed * Time.deltaTime;
+        transform.position += transform.right * moveSpeed * Time.deltaTime;
     }
 }
